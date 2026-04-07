@@ -9,7 +9,7 @@ export function useSocket(token) {
   useEffect(() => {
     if (!token) return;
 
-    const socket = io("http://localhost:5000", {
+    const socket = io("https://chat-app-f5vd.onrender.com", {
       transports: ["websocket"],
     });
 

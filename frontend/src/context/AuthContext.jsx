@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import axios from "axios";
+axios.defaults.baseURL = "https://chat-app-f5vd.onrender.com";
 
 const AuthContext = createContext(null);
 
