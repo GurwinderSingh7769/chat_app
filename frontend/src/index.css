@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-app:        #111b21;
+  --bg-sidebar:    #111b21;
+  --bg-sidebar-hd: #202c33;
+  --bg-chat:       #0b141a;
+  --bg-input:      #202c33;
+  --bg-bubble-out: #005c4b;
+  --bg-bubble-in:  #202c33;
+  --bg-hover:      #2a3942;
+  --bg-active:     #2a3942;
+  --bg-modal:      #233138;
+  --text-primary:  #e9edef;
+  --text-secondary:#8696a0;
+  --text-bubble:   #e9edef;
+  --border:        #222d34;
+  --accent:        #00a884;
+  --accent-hover:  #06cf9c;
+  --danger:        #f15c6d;
+  --tick:          #53bdeb;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-app);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #374248; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #485c66; }
+
+.app-loading {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
